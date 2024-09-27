@@ -34,28 +34,6 @@ comment_remover -f your_file.rs
 sudo ln -s /path/to/your/script/comment_remover.py /usr/local/bin/comment_remover
 After this step, the comment_remover script will be available for use from anywhere in your terminal.
 
-Step 2: Create a .desktop File for GUI Integration (Optional)
-If you want the script to be accessible from the system's application menu (e.g., GNOME, KDE, etc.), follow these steps to create a .desktop file:
-
-bash
-Copy code
-# Create a .desktop file in the /usr/share/applications directory:
-sudo nano /usr/share/applications/comment_remover.desktop
-
-# Add the following content to the file:
-[Desktop Entry]
-Name=Comment Remover
-Comment=Copy the original file with comments and remove comments from the original
-Exec=/usr/local/bin/comment_remover %f
-Icon=utilities-terminal
-Terminal=true
-Type=Application
-Categories=Utility;Development;
-
-# Make the .desktop file executable:
-sudo chmod +x /usr/share/applications/comment_remover.desktop
-Once you complete this step, you will be able to search for Comment Remover in your applications menu and run it from there.
-
 Usage
 Command-Line Options
 -f or --file: Specify the path to the code file to process.
