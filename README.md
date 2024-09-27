@@ -1,3 +1,4 @@
+# Code Comment Extractor
 # Python Comment Remover and Backup
 
 This Python script copies the original file (with all comments) into a `.comments` folder and removes all comments from the original file, leaving only the code.
@@ -24,7 +25,7 @@ You need to place the Python script in a directory that is included in your syst
 chmod +x comment_remover.py
 
 # Option 1: Move the script to /usr/local/bin
-sudo mv comment_remover.py /usr/local/bin/comment_remover
+sudo git add .mv comment_remover.py /usr/local/bin/comment_remover
 
 # After this, you can run the script globally as:
 comment_remover -f your_file.rs
